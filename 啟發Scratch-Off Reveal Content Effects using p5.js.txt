@@ -1,0 +1,3 @@
+Scratch-Off Reveal Content Effects using p5.js
+
+https://youtu.be/6CKW7tLv5e0

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //*背景漸層彩虹 動畫---star---
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+//*背景漸層彩虹 動畫---end---
+
+.content {
+  max-width: 80%;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.2em;
+}
+//!---canvas(內建)標籤 >> 前面不加 .
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  //z-index: 1;
+  background: #fff;
+  //z-index: 2;
+  mix-blend-mode: screen; //!---前後圖片混和模式
+}
